@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVVMBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type anything" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8HP-1j-sqI">
+                                <rect key="frame" x="49" y="55" width="265" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Xhi-9B-XGv"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOy-Ci-ePU">
+                                <rect key="frame" x="49" y="130" width="265" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWp-0G-bX4">
+                                <rect key="frame" x="49" y="209" width="265" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8HP-1j-sqI" secondAttribute="trailing" constant="61" id="CFQ-mO-m3F"/>
+                            <constraint firstItem="8HP-1j-sqI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="Lj3-L5-r8O"/>
+                            <constraint firstItem="8HP-1j-sqI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="O1Y-Qf-T3r"/>
+                            <constraint firstItem="RWp-0G-bX4" firstAttribute="top" secondItem="XOy-Ci-ePU" secondAttribute="bottom" constant="58" id="dBU-rK-cWP"/>
+                            <constraint firstItem="XOy-Ci-ePU" firstAttribute="top" secondItem="8HP-1j-sqI" secondAttribute="bottom" constant="45" id="hdH-ci-ngc"/>
+                            <constraint firstItem="8HP-1j-sqI" firstAttribute="trailing" secondItem="XOy-Ci-ePU" secondAttribute="trailing" id="nD6-FG-y7O"/>
+                            <constraint firstItem="8HP-1j-sqI" firstAttribute="leading" secondItem="RWp-0G-bX4" secondAttribute="leading" id="o9z-2e-0aG"/>
+                            <constraint firstItem="8HP-1j-sqI" firstAttribute="trailing" secondItem="RWp-0G-bX4" secondAttribute="trailing" id="pJC-Ei-S8o"/>
+                            <constraint firstItem="8HP-1j-sqI" firstAttribute="leading" secondItem="XOy-Ci-ePU" secondAttribute="leading" id="rvw-Ev-SGM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="XOy-Ci-ePU" id="UUd-dX-Prv"/>
+                        <outlet property="reversedNamelabel" destination="RWp-0G-bX4" id="bjl-fx-Gpp"/>
+                        <outlet property="textField" destination="8HP-1j-sqI" id="MlO-X3-Oox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>
